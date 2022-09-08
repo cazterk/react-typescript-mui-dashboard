@@ -1,7 +1,17 @@
 import { Outlet, Link, useRoutes, useLocation } from "react-router-dom";
+import { Box } from "@mui/material";
+
 const SidebarLayout = () => {
   return (
-    <div>
+    <Box
+      sx={{
+        height: "100%",
+        background: "#fef8dd",
+        display: { xs: "none", sm: "block" }
+      }}
+      flex={1}
+      p={2}
+    >
       <nav>
         <ul>
           <li>
@@ -15,14 +25,7 @@ const SidebarLayout = () => {
           </li>
         </ul>
       </nav>
-
-      <hr />
-
-      {/* An <Outlet> renders whatever child route is currently active,
-              so you can think about this <Outlet> as a placeholder for
-              the child routes we defined above. */}
-      <Outlet />
-    </div>
+    </Box>
   );
 };
 export default SidebarLayout;

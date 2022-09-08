@@ -12,6 +12,9 @@ const Loader = (Component) => (props) =>
 const SidebarLayout = Loader(
   lazy(() => import("src/digipro-medical/components/sideBar/"))
 );
+const Layout = Loader(
+  lazy(() => import("src/digipro-medical/content/containers/Layout"))
+);
 // pages
 const Home = Loader(lazy(() => import("src/digipro-medical/pages/home/")));
 const Search = Loader(lazy(() => import("src/digipro-medical/pages/search/")));
@@ -22,7 +25,7 @@ const ClientProfile = Loader(
 const routes: RouteObject[] = [
   {
     path: "",
-    element: <SidebarLayout />,
+    element: <Layout />,
     children: [
       {
         path: "",

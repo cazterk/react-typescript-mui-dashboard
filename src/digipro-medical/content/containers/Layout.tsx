@@ -6,7 +6,7 @@ import Header from "src/digipro-medical/components/header/";
 const Layout = ({ children }) => {
   return (
     <Box>
-      <Stack direction="row" spacing={2} justifyContent="space-between">
+      <Stack direction="row" spacing={0} justifyContent="space-between">
         <SidebarLayout />
 
         <Box flex={6}>

@@ -18,10 +18,10 @@ const SidebarLayout = () => {
             <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/serach">Users</Link>
+            <Link to="/serach">Search</Link>
           </li>
           <li>
-            <Link to="/client">Client profile</Link>
+            <Link to="/client">Client </Link>
           </li>
         </ul>
       </nav>

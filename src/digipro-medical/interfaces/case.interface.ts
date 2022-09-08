@@ -9,7 +9,7 @@ import { ICasePhysicalInput } from "../store/interfaces/case/case.physical.inter
 import { IPrescriptionInput } from "../store/interfaces/case/case.prescription";
 import { IChronicCaseVisitInput } from "../store/interfaces/case/case.visit.details";
 import { IMedicalHistoryInput } from "../store/interfaces/case/case.medical.history.interface";
-import { IVitalsInput } from "../store/interfaces/case/case.vitals";
+// import { IVitalsInput } from "../store/interfaces/case/case.vitals";
 import { IGeneralExamInput } from "../store/interfaces/case/case.general.exam";
 import { ICaseInput } from "../store/interfaces/case/case";
 import {
@@ -26,8 +26,8 @@ import {
   ICervicalCancerPresentingComplaintsInput
 } from "../store/interfaces/case/cervical_cancer_presenting_complaints.interface";
 import { ICervicalCancerCaseFindingsInput } from "../store/interfaces/case/cervical_cancer_case_findings";
-import { PatientTypeEnum } from "../enums/reference/patient_type";
-import { CaseStatus } from "../enums/case/case_status";
+// import { PatientTypeEnum } from "../enums/reference/patient_type";
+// import { CaseStatus } from "../enums/case/case_status";
 
 export interface ICase extends IAuditor, ICaseInput {
   readonly case_uuid?: string;
@@ -129,7 +129,7 @@ export interface IMedicalHistory extends IMedicalHistoryInput {
 export interface IPresentingComplaints {
   readonly id: number;
   general_exam: IGeneralExam;
-  vitals: IVitals;
+  // vitals: IVitals;
   enabled: boolean;
   case: number;
 }
@@ -142,14 +142,14 @@ export interface IGeneralExam extends IGeneralExamInput {
   updated_by?: string;
 }
 
-export interface IVitals extends IVitalsInput {
-  readonly id: number;
-  readonly created_at?: Date;
-  updated_at?: Date;
-  enabled: boolean;
-  readonly created_by?: string;
-  updated_by?: string;
-}
+// export interface IVitals extends IVitalsInput {
+//   readonly id: number;
+//   readonly created_at?: Date;
+//   updated_at?: Date;
+//   enabled: boolean;
+//   readonly created_by?: string;
+//   updated_by?: string;
+// }
 
 export interface ITBPresentingComplaints extends ITbPresentingComplaintInput {
   readonly id: number;
@@ -176,14 +176,14 @@ export interface ICasePayload {
   in_patient: boolean;
   passer_by: boolean;
   secondary_visit_type: string;
-  patient_type: PatientTypeEnum;
+  // patient_type: PatientTypeEnum;
   fuzzy_patient_type: string;
   visit_type: number;
   reason_for_visit: string;
   details_for_visit: string;
   diagnosis: string;
   complaint_details: string;
-  status: CaseStatus;
+  // status: CaseStatus;
   art_presenting_complaints: IArtPresentingComplaintInput | undefined,
   art_drug_exposure: IArtDrugExposureInput | undefined,
   diagnostics: IDiagnosisInput[],
@@ -211,14 +211,14 @@ export interface ICaseEditPayload {
   in_patient: boolean;
   passer_by: boolean;
   secondary_visit_type: string;
-  patient_type: PatientTypeEnum;
+  // patient_type: PatientTypeEnum;
   fuzzy_patient_type: string;
   visit_type: number;
   reason_for_visit: string;
   details_for_visit: string;
   diagnosis: string;
   complaint_details: string;
-  status: CaseStatus;
+  // status: CaseStatus;
   art_presenting_complaints: IArtPresentingComplaintInput | undefined,
   art_drug_exposure: IArtDrugExposureInput | undefined,
   diagnostics: IDiagnosisInput[],

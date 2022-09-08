@@ -15,8 +15,8 @@ import {
   IPresentingComplaintsInput, ITbPresentingComplaintInput
 } from "./case.general";
 import { ICervicalCancerCaseFindingsInput } from "./cervical_cancer_case_findings";
-import { PatientTypeEnum } from "../../../enums/reference/patient_type";
-import { CaseStatus } from "../../../enums/case/case_status";
+// import { PatientTypeEnum } from "../../../enums/reference/patient_type";
+// import { CaseStatus } from "../../../enums/case/case_status";
 
 export interface ICaseInput {
   client: number;
@@ -25,14 +25,14 @@ export interface ICaseInput {
   in_patient: boolean;
   passer_by: boolean;
   secondary_visit_type: string;
-  patient_type: PatientTypeEnum;
+  // patient_type: PatientTypeEnum;
   fuzzy_patient_type: string;
   visit_type: number;
   reason_for_visit: string;
   details_for_visit: string;
   diagnosis: string;
   complaint_details: string;
-  status: CaseStatus;
+  // status: CaseStatus;
 }
 
 export interface ICaseRegState extends ICaseInput {

@@ -1,5 +1,5 @@
 import { IGeneralExamInput } from "./case.general.exam";
-import { IVitalsInput } from "./case.vitals";
+// import { IVitalsInput } from "./case.vitals";
 
 export interface IComplaints {
   id?: number;
@@ -94,6 +94,6 @@ export interface IDrugExposureInput {
 export interface IPresentingComplaintsInput {
   case?: number;
   general_exam: IGeneralExamInput;
-  vitals: IVitalsInput;
+  // vitals: IVitalsInput;
 }
 

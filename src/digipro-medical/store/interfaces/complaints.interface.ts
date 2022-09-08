@@ -1,11 +1,11 @@
-import { ICase, IGeneralExam, IVitals } from "../../interfaces/case.interface";
+import { ICase, IGeneralExam, } from "../../interfaces/case.interface";
 
 
 export interface IComplaint {
   id?: number;
   slug?: string;
   case: ICase;
-  vitals: IVitals;
+  // vitals: IVitals;
   general_exam: IGeneralExam;
   enabled?: boolean;
 }

@@ -4,13 +4,13 @@ import {
   styled,
   Toolbar,
   Typography,
-  Box,
   Badge,
-  Avatar,
   Stack
 } from "@mui/material";
 import { IconContext } from "react-icons";
 import { MdOutlineNotificationsActive } from "react-icons/md";
+import UserAvatar from "src/digipro-medical/components/avatars/userAvator";
+
 const StyledToobar = styled(Toolbar)({
   display: "flex",
   justifyContent: "space-between",
@@ -28,7 +28,8 @@ const Search = styled("div")(({ theme }) => ({
   alignItems: "center",
   [theme.breakpoints.up("sm")]: {
     width: "37.5rem"
-  }
+  },
+  zIndex: "1"
 }));
 
 const Icons = styled(Stack)({
@@ -57,7 +58,7 @@ const Header = () => {
               <MdOutlineNotificationsActive color="action" />
             </IconContext.Provider>
           </Badge>
-          <Avatar sx={{ width: 25, height: 25 }} alt="Travis Howard" src="" />
+          <UserAvatar />
         </Icons>
       </StyledToobar>
     </AppBar>

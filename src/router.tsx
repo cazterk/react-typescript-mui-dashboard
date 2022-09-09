@@ -10,7 +10,7 @@ const Loader = (Component) => (props) =>
   );
 // components
 const SidebarLayout = Loader(
-  lazy(() => import("src/digipro-medical/components/sideBar/"))
+  lazy(() => import("src/digipro-medical/components/sidebar"))
 );
 const Layout = Loader(
   lazy(() => import("src/digipro-medical/content/containers/Layout"))
@@ -32,7 +32,7 @@ const routes: RouteObject[] = [
         element: <Home />
       },
       {
-        path: "/serach",
+        path: "/search",
         element: <Search />
       },
       {

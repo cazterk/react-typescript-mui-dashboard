@@ -1,6 +1,6 @@
 import { Outlet } from "react-router-dom";
 import { Box, Stack } from "@mui/material";
-import SidebarLayout from "src/digipro-medical/components/sideBar/";
+import SidebarLayout from "src/digipro-medical/components/sidebar";
 import Header from "src/digipro-medical/components/header/";
 
 const Layout = ({ children }) => {
@@ -14,7 +14,8 @@ const Layout = ({ children }) => {
           <Header />
           <Box
             sx={{
-              background: "#caf1de"
+              height: "100vh",
+              background: "#e8eff6"
             }}
             p={2}
           >

@@ -6,7 +6,7 @@ const SidebarLayout = () => {
     <Box
       sx={{
         height: "100%",
-        background: "#fef8dd",
+        background: "#002979",
         display: { xs: "none", sm: "block" }
       }}
       flex={1}
